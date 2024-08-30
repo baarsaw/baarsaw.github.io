@@ -7,7 +7,13 @@ function HomePage() {
     return (
         <div className="HomePage">
             <h1>About</h1>
-            <p>Mechanical Engineer, Computer Science Student</p>
+            <h2><strong>Sawyer Baar</strong></h2>
+            <p className='about-small-text'>
+            <strong>Computer Science Student</strong><br/>
+            Oregon State University<br/>
+            <strong>Professional Mechanical Engineer</strong><br/>
+            (102164PE, Oregon State Board of Examiners for Engineering & Land Surveying) <br/>
+            </p>
             <img className="profile-pic" src={profilePic} alt="Profile" style={{ width: '100px', borderRadius: '10%' }} />
             <h2>Profile</h2>
             <p>I study computer science at Oregon State Engineering and expect to graduate in June 2025. I am searching for career opportunities in Computer Science.  </p>
