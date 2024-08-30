@@ -50,7 +50,7 @@ function ContactForm() {
             <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Please provide a short message.' maxLength={characterLimit} required></textarea>
             {/* <label>Attachment</label>
             <input type="file" name="attachment" onChange={handleChange} /> */}
-            <p>Message is limited to {characterLimit} characters.</p>
+            <p className='contact-message-limit' >Message is limited to {characterLimit} characters.</p>
             <button type="submit">Send</button>
         </form>
     );

@@ -119,6 +119,10 @@ textarea {
   height: 150px;
 }
 
+.contact-message-limit {
+  margin-left: 20px;
+}
+
 input {
   height: 2.5em;
   width: 300px;
