@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -18,7 +18,12 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div id="header" > 
+        <header>
         <Navbar />
+        </header>
+        </div>
+        
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -31,24 +36,6 @@ function App() {
         </Routes>
       </div>
     </Router>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1>Welcome!</h1>
-    //     <img src={headshot} className="App-Headshot" alt="Headshot" />
-    //     <h2>About</h2>
-    //     <p>Sawyer is a Computer Science Student at Oregon State University with a background as a Professional mechanical engineer.</p>
-    //     <p>For a  </p>
-    //     <h2>Skills and Interests</h2>
-    //     <p></p>
-    //     <h2>Projects</h2>
-    //     <p>The following projects showcase Sawyer's ability and experience.</p>
-    //     <ul>
-    //       {/* <li><Link to="/">Project 1 - Personal Website - Using React</Link></li>
-    //       <li><Link to="/Snake">Project 2 - Snake Game - In-Browser</Link></li> */}
-    //       <li>More Projects to Come.</li>
-    //     </ul>
-    //   </header>
-    // </div>
   );
 }
 

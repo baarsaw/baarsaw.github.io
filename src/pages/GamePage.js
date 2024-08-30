@@ -5,7 +5,7 @@ function GamePage() {
     return (
         <div className="GamePage">
             <h1>Games</h1>
-            <h2>Snake</h2>
+            {/* <h2>TBD</h2> */}
             <Snake />
         </div>
     );

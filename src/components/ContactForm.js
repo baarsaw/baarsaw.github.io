@@ -36,18 +36,21 @@ function ContactForm() {
         });
     };
 
+    const characterLimit = 720;
+
     return (
         <form onSubmit={handleSubmit}>
             <label>Name</label>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Full Name' required />
             <label>Job Title</label>
-            <input type="text" name="jobTitle" value={formData.jobTitle} onChange={handleChange} required />
+            <input type="text" name="jobTitle" value={formData.jobTitle} onChange={handleChange} placeholder='Job Title' required />
             <label>Company</label>
-            <input type="text" name="company" value={formData.company} onChange={handleChange} required />
+            <input type="text" name="company" value={formData.company} onChange={handleChange} placeholder='Company' required />
             <label>Message</label>
-            <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
-            <label>Attachment</label>
-            <input type="file" name="attachment" onChange={handleChange} />
+            <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Please provide a short message.' maxLength={characterLimit} required></textarea>
+            {/* <label>Attachment</label>
+            <input type="file" name="attachment" onChange={handleChange} /> */}
+            <p>Message is limited to {characterLimit} characters.</p>
             <button type="submit">Send</button>
         </form>
     );

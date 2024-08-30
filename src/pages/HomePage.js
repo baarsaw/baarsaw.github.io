@@ -8,7 +8,7 @@ function HomePage() {
         <div className="HomePage">
             <h1>About</h1>
             <p>Mechanical Engineer, Computer Science Student</p>
-            <img className="profile-pic" src={profilePic} alt="Profile" style={{ width: '200px', borderRadius: '50%' }} />
+            <img className="profile-pic" src={profilePic} alt="Profile" style={{ width: '100px', borderRadius: '10%' }} />
             <h2>Profile</h2>
             <p>I study computer science at Oregon State Engineering and expect to graduate in June 2025. I am searching for career opportunities in Computer Science.  </p>
             <p>I previously worked as a Professional Mechanical Engineer for 6-years and have significant professional experience in delivering multi-million dollar, multi-year projects to clients as part of a diverse, cross-disciplinary team.</p>
@@ -20,7 +20,7 @@ function HomePage() {
             </ul>
             <h2>Resume</h2>
             <p>My Resume can be downloaded from <a href="https://github.com/baarsaw/baarsaw.github.io/blob/master/src/assets/resume_TEST.pdf" ><strong>GitHub</strong></a>.</p>
-            <iframe className="resume-iframe" src={resume} ></iframe>
+            <iframe title='resume' className="resume-iframe" src={resume} ></iframe>
             <h2>Project Gallery</h2>
             <Gallery />
         </div>

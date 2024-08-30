@@ -5,7 +5,7 @@ function Snake() {
   return (
     <div className="Snake">
       <header className="Snake-header">
-        <p>Snake Game</p>
+        <p>The Game Page is in development.</p>
       </header>
     </div>
   );
