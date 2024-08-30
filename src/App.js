@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
+import GamePage from './pages/GamePage';
 
 
 // import Project1 from './pages/Project1';
@@ -22,7 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<GalleryPage />} />
-
+          <Route path="/games" element={<GamePage />} />
           {/* <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
           <Route path="/project3" element={<Project3 />} />
